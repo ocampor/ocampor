@@ -21,7 +21,7 @@ function App() {
             <Menu.Item key="3"><Link to="/about">About</Link></Menu.Item>
           </Menu>
         </Header>
-        <Content style={{ background: pageColor, minHeight: 360 }}>
+        <Content style={{ background: pageColor, minHeight: 360, padding: '0 5em ' }}>
           <React.Suspense fallback={<em>Loading...</em>}>
             <Router>
               <Routes path="*"/>
@@ -31,9 +31,6 @@ function App() {
         <Footer style={{
           textAlign: 'center',
           background: pageColor,
-          position: 'absolute',
-          bottom: 0,
-          width: '100%'
         }}>
           ©2019 ocampor
         </Footer>
