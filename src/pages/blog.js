@@ -10,7 +10,6 @@ const { Content } = Layout;
 export default function Blog() {
   const { posts } = useRouteData()
   return (
-    <Content>
       <div>
         <h1>Blog</h1>
         <br/>
@@ -23,6 +22,5 @@ export default function Blog() {
           ))}
         </ul>
       </div>
-    </Content>
   )
 }

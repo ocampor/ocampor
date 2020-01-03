@@ -1,9 +1,9 @@
 import React from 'react'
 import { Avatar, Button, Layout, Row, Typography } from 'antd';
 
-//TODO: Move this to a configuration file
 const { Content } = Layout;
 
+//TODO: Move this to a configuration file
 let createSocialLinks = () => {
   let icons = [
     { icon: "medium", href: "https://medium.com/@ocampor" },
@@ -27,25 +27,25 @@ let createSocialLinks = () => {
 
 let createProfile = () => {
   let profileDetails = [
-    <Avatar style={{ margin: '5%' }} size={128} src="profile.png"/>,
-    <Typography.Title style={{ margin: '0' }}>Ricardo Ocampo</Typography.Title>,
-    <Typography.Title level={3} type="secondary">Data Scientist</Typography.Title>,
-    <div style={{ display: 'flex', margin: '5%' }}>
+    <Avatar style={{ margin: '2.5em' }} size={128} src="profile.png"/>,
+    <Typography.Title style={{ margin: '0' }} level={2}>Ricardo Ocampo</Typography.Title>,
+    <Typography.Title level={4} type="secondary">Data Scientist</Typography.Title>,
+    <div style={{ display: 'flex', margin: '2.5em' }}>
       {createSocialLinks()}
     </div>
   ]
 
   return profileDetails.map(item => (
-    <Row type={"flex"} justify={"center"} align={"middle"}>
+    <Row type={"flex"} justify={"center"}>
       {item}
     </Row>
   ))
 }
 
 export default () => (
-  <div>
-    <Content>
+  <Content>
+    <div style={{ margin: '10% 0%' }}>
       {createProfile()}
-    </Content>
-  </div>
+    </div>
+  </Content>
 )

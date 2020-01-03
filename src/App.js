@@ -7,30 +7,36 @@ import { Router } from './components/Router';
 
 const { Header, Footer, Content } = Layout;
 
+let pageColor = 'white';
+
 function App() {
   return (
     <Root>
-      <Layout className="layout">
-        <Header>
-          <div className="logo"/>
-          <Menu
-            theme="dark"
-            mode="horizontal"
-            style={{ lineHeight: '64px' }}
-          >
+      <Layout>
+        <Header style={{ background: pageColor }}>
+          <div/>
+          <Menu theme="light" mode="horizontal">
             <Menu.Item key="1"> <Link to="/">Home</Link></Menu.Item>
             <Menu.Item key="2"><Link to="/blog">Blog</Link></Menu.Item>
             <Menu.Item key="3"><Link to="/about">About</Link></Menu.Item>
           </Menu>
         </Header>
-        <Content style={{ background: 'white', minHeight: 360 }}>
+        <Content style={{ background: pageColor, minHeight: 360 }}>
           <React.Suspense fallback={<em>Loading...</em>}>
             <Router>
               <Routes path="*"/>
             </Router>
           </React.Suspense>
         </Content>
-        <Footer style={{ textAlign: 'center' }}>©2019 Ricardo Ocampo</Footer>
+        <Footer style={{
+          textAlign: 'center',
+          background: pageColor,
+          position: 'absolute',
+          bottom: 0,
+          width: '100%'
+        }}>
+          ©2019 ocampor
+        </Footer>
       </Layout>
     </Root>
   )
