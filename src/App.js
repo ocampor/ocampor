@@ -21,7 +21,7 @@ function App() {
             <Menu.Item key="3"><Link to="/about">About</Link></Menu.Item>
           </Menu>
         </Header>
-        <Content style={{ background: pageColor, minHeight: 360, padding: '0 5em ' }}>
+        <Content style={{ background: pageColor, minHeight: 360 }}>
           <React.Suspense fallback={<em>Loading...</em>}>
             <Router>
               <Routes path="*"/>
