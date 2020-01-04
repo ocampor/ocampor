@@ -1,0 +1,10 @@
+[
+  {
+    "id": 1,
+    "title": "Deep CNN-Based Blind Image Quality Predictor in Python",
+    "subTitle": "A step by step guide to implement the Deep CNN-Based Blind Image Quality Predictor (DIQA) in Python",
+    "description": "In this tutorial, I present a step by step guide to implement the Deep CNN-Based Blind Image Quality Predictor (DIQA) algorithm using TensorFlow 2.0 data pipelines and Keras functional API.",
+    "image": "https://miro.medium.com/max/1536/1*nehRT1u1lD19hZTzQj96yA.png",
+    "link": "https://towardsdatascience.com/deep-image-quality-assessment-with-tensorflow-2-0-69ed8c32f195"
+  }
+]

@@ -1,7 +1,5 @@
 import React from 'react'
 import { useRouteData } from 'react-static'
-
-import { Link } from '../components/Router'
 import { Icon, Layout, List } from 'antd';
 
 const { Content } = Layout;
@@ -21,35 +19,25 @@ const BlogList = ({ posts }) => (
       onChange: page => {
         console.log(page);
       },
-      pageSize: 3,
+      pageSize: 4,
     }}
     dataSource={posts}
-    footer={
-      <div>
-        <b>ant design</b> footer part
-      </div>
-    }
     renderItem={item => (
       <List.Item
         key={item.title}
-        actions={[
-          <IconText type="star-o" text="156" key="list-vertical-star-o"/>,
-          <IconText type="like-o" text="156" key="list-vertical-like-o"/>,
-          <IconText type="message" text="2" key="list-vertical-message"/>,
-        ]}
         extra={
           <img
             width={272}
             alt="logo"
-            src="https://gw.alipayobjects.com/zos/rmsportal/mqaQswcyDLcXyDKnZfES.png"
+            src={item.image}
           />
         }
       >
         <List.Item.Meta
-          title={<Link to={`/blog/post/${item.id}/`}>{item.title}</Link>}
-          description={item.body}
+          title={<a target={"_blank"} href={item.link}>{item.title}</a>}
+          description={item.subTitle}
         />
-        {item.body}
+        {item.description}
       </List.Item>
     )}
   />
@@ -59,10 +47,7 @@ export default function Blog() {
   const { posts } = useRouteData()
   return (
     <Content>
-      <div>
-        <h1>Blog</h1>
-        <br/>
-        All Posts:
+      <div style={{ margin: '1.5em 20%' }}>
         <BlogList posts={posts}/>
       </div>
     </Content>
