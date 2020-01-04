@@ -6,5 +6,45 @@
     "description": "In this tutorial, I present a step by step guide to implement the Deep CNN-Based Blind Image Quality Predictor (DIQA) algorithm using TensorFlow 2.0 data pipelines and Keras functional API.",
     "image": "https://miro.medium.com/max/1536/1*nehRT1u1lD19hZTzQj96yA.png",
     "link": "https://towardsdatascience.com/deep-image-quality-assessment-with-tensorflow-2-0-69ed8c32f195"
+  },
+  {
+    "id": 2,
+    "title": "Image Quality Assessment: A Survey",
+    "subTitle": "Description of the most recent methods for image quality assessment",
+    "description": "Description of the most recent methods for image quality assessment. A survey with the latest techniques and some of their theory is presented. A work in progress tensorflow 2.0 notebook is included.",
+    "image": "https://miro.medium.com/fit/c/1400/420/1*G9RpDKUnP4ivceIqqzio9A.png",
+    "link": "https://medium.com/@ocampor/advanced-methods-for-iqa-37581ec3c31f"
+  },
+  {
+    "id": 3,
+    "title": "Improving Image Quality in Property Finder",
+    "subTitle": "Description of my experience in Property Finder to foster users to improve the image quality of their content.",
+    "description": "Description of my experience in Property Finder to foster users to improve the image quality of their content.",
+    "image": "https://miro.medium.com/fit/c/1400/420/1*u-8f_MI3L8ZP4MiP0krpMA.jpeg",
+    "link": "https://medium.com/propertyfinder-engineering/improving-property-finders-content-quality-e639f944934b"
+  },
+  {
+    "id": 4,
+    "title": "Setting two GPU in your laptop: eGPU in Ubuntu 18.04 LTS",
+    "subTitle": "Step by Step to configure an eGPU in Ubuntu 18.04 LTS",
+    "description": "Some months ago, I decided to buy a new laptop with enough power to crunch data. At that time, I also had a desktop with a GTX 1070, but I stopped using it because of the convenience of my new…",
+    "image": "https://miro.medium.com/fit/c/1400/420/1*7uCMtXl5EWNrQpJmkqphZQ.jpeg",
+    "link": "https://medium.com/@ocampor/setting-egpu-in-ubuntu-18-04-ba789a45de"
+  },
+  {
+    "id": 5,
+    "title": "Image Feature Extraction: Local Binary Patterns with Cython",
+    "subTitle": "Brief explanation of local binary patterns with Python and an impressively fast speed up with Cython.",
+    "description": "Local binary patterns are used by several applications to help machine learning algorithms to learn faster. Although it’s implementation is not hard, it is a good example to experiment with Cython.",
+    "image": "https://miro.medium.com/fit/c/948/284/1*gdZTOBV43FcDZ2fL13-ncA.png",
+    "link": "https://medium.com/hackernoon/image-feature-extraction-local-binary-patterns-with-cython-b31171ad5dc9"
+  },
+  {
+    "id": 6,
+    "title": "Automatic Image Quality Assessment in Python",
+    "subTitle": "Step by step guide to code BRISQUE method for automatic image quality assessment",
+    "description": "In this article, I present a brief introduction to image quality assessment and the necessary python code to calculate the BRISQUE method.",
+    "image": "https://miro.medium.com/focal/1400/420/64/20/1*jd1w5ZssPSgPatpidDbIGQ.png",
+    "link": "https://towardsdatascience.com/automatic-image-quality-assessment-in-python-391a6be52c11"
   }
 ]

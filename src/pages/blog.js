@@ -1,15 +1,9 @@
 import React from 'react'
 import { useRouteData } from 'react-static'
-import { Icon, Layout, List } from 'antd';
+import { Avatar, Layout, List } from 'antd';
 
 const { Content } = Layout;
 
-const IconText = ({ type, text }) => (
-  <span>
-    <Icon type={type} style={{ marginRight: 8 }}/>
-    {text}
-  </span>
-);
 
 const BlogList = ({ posts }) => (
   <List
@@ -26,10 +20,10 @@ const BlogList = ({ posts }) => (
       <List.Item
         key={item.title}
         extra={
-          <img
-            width={272}
-            alt="logo"
+          <Avatar
+            size={150}
             src={item.image}
+            shape={"square"}
           />
         }
       >
