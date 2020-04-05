@@ -14,7 +14,12 @@ global one.
 3. Run `react-static start`.
 
 ## Deploy to Production
-TO BE CONTINUED
+1. Create an orphan branch in the main repository. 
+```bash
+git checkout --orphan gh-pages
+```
+
+
 
 ## Common Errors
 ### Build Fails 

@@ -6,7 +6,8 @@
     "stage": "react-static build --staging",
     "build": "react-static build",
     "analyze": "react-static build --analyze",
-    "serve": "serve dist -p 3000"
+    "serve": "serve dist -p 3000",
+    "deploy": "react-static build && gh-pages --dist ./dist --branch gh-pages --no-push"
   },
   "dependencies": {
     "@reach/router": "^1.2.1",
@@ -30,6 +31,7 @@
     "eslint-plugin-jsx-a11y": "^6.2.3",
     "eslint-plugin-react": "^7.14.3",
     "eslint-plugin-react-hooks": "^2.3.0",
+    "gh-pages": "^2.2.0",
     "serve": "^11.1.0"
   }
 }
